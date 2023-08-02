@@ -32,7 +32,7 @@
     background-color:white;
   }
   
-  img {
+  .card img {
     width: 50%;
     margin-bottom: 10px;
     border: solid black 2px;
@@ -63,6 +63,12 @@
     text-align: center;
     background-color: beige;
     padding-top: 10px;
+  }
+
+  .list-pokemon img {
+    width: 100px;
+    height: 100px;
+    
   }
   
   .list-pokemon::-webkit-scrollbar {

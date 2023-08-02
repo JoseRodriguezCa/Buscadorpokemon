@@ -79,10 +79,14 @@ const fetchPokemonNames = () => {
   });
 };
 
+
+
 const displayPokemonNames = () => {
   const pokemonList = document.querySelector('.list-pokemon');
+  listContainer.innerHTML = `<img src="https://i.gifer.com/origin/76/76dfca2a58c4dff5c9827b527132bda8.gif" alt="">`
 
   fetchPokemonNames().then((pokemonNames) => {
+    pokemonList.innerHTML = '';
     for (let i = 0; i < pokemonNames.length; i++) {
       const li = document.createElement('li');
       li.className = 'list';
